@@ -1,5 +1,5 @@
 # counter_7
-## Tugas 7
+## [Tugas 7](#Tugas-7)
 ## Tugas 8
 
 ## Nama  : Teuku Gevin Taufan
