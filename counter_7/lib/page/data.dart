@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:counter_7/form.dart';
-import 'package:counter_7/widgets/refaktor.dart';
+import 'package:counter_7/page/form.dart';
+import 'package:counter_7/widgets/drawer.dart';
 
 class MyDataPage extends StatefulWidget {
   const MyDataPage({super.key});

@@ -69,3 +69,28 @@ sudah memiliki nilai, sedangkan final tidak mengharuskan variabel memiliki nilai
 3. Membuat halaman form yang berisi input judul dan nominal budget berupa widget `TextFormField`, dan input jenis budget berupa widget `DropDownButton`  
 4. Membuat class Budget dan melakukan instansiasi tiap input dimasukkan di halaman form  
 5. Menampilkan objek-objek Budget dalam widget `ListTile`, dan dilakukan iterasi for 
+
+## Tugas 9
+### Cara Pengambilan Data Pada JSON
+Pengambilan data tersebut bisa membuat model atau tidak, tetapi lebih disarankan membuat model. Karena dengan membuat model, pemetaan datanya menjadi jelas
+dan memudahkan kita mengambil datanya, tanpa model akan rawan terjadinya error karena bisa saja ada fields yang hilang atau data yang tidak diketahui.
+
+### Widget Digunakan
+- `ListTile` row yang menampung teks sebagai leading dan trailing
+- `Checkbox` widget yang berfungsi untuk membuat checkbox
+- `FutureBuilder` widget yang berfungsi untuk menampilkan data yang diambil dari API
+- `TextWidget` yang digunakan untuk menampilkan text
+- `Padding` Widget yang digunakan untuk membuat jarak antardalam widget
+- `Drawer` Widget yang digunakan untuk membuat navigation drawer
+
+### Mekanisme Pengambilan Data Pada JSON
+Http Package adalah library yang dipakai guna mendapatkan http request. Http akan melakukan fetching data dalam dan mereturn http response. Response tersebut 
+akan di decode menggunakan jsonDecode() yang akan menghasilkan data-data JSON dalam bentuk Map. Data-data Map tersebut akan kemudian diolah sehingga data-data 
+dalam bentuk Map tersebut dapat menjadi data-data pada objek yang merupakan Model instance yang sesuai dengan struktur JSON tersebut
+
+### Implementasi Tugas 9
+1. Membuat model `watch_list.dart` di folder model bedasarkan json tugas 3 mywatchlist menggunakan quicktype
+2. Membuat `fetch_watch_list.dart` untuk memetekan data json yang diambil dari tugas 3 mywatchlist dan memetekannya ke model WatchList
+3. Membuat `watch.dart` menampilkan data mywatchlist tersebut (judul dan check box)
+4. Membuat `watch_detail.dart` menampilkan data film yang ditekan dari `watch.dart`
+5. Menambahkan drawer yang mengarah ke `watch.dart`
